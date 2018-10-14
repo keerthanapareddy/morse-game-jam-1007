@@ -12,6 +12,7 @@ var maxTries = 2;
 
 //if user touches one of the cards
 var trainDiv = document.getElementById('train');
+var indexTextDiv = document.getElementById('index-text');
 var modal = document.getElementById('myModal');
 
 // keeps track of what is pressed (sequence of morse chars)
@@ -78,6 +79,7 @@ function beginLesson(lessonID){
   //TODO autoplay video here
   answerValue = '';
   trainDiv.style.display = 'none';
+  indexTextDiv.style.display = 'none';
   document.getElementById('yellowbg').style.background = '#f7f7f7';
   lesson[lessonID].style.display = 'block';
   lessonVideo[lessonID].play();
@@ -88,6 +90,7 @@ function reset(){
   pressed = '';
   location.reload();
   trainDiv.style.display = 'block';
+  indexTextDiv.style.display = 'block';
   console.log(trainDiv);
 }
 
