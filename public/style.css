@@ -1,23 +1,29 @@
 html,
 body
 {
-    height: auto;
+  width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
+#entire-bg{
+
+  height: 100%;
+
+}
+
 #yellowbg{
     background-color: #fff0a6;
-    height: 600px;
+    height: 70%;
 }
 
 .grid-container {
-  width: 100%;
   height: auto;
   position: relative;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  padding:100px 20px;
+  padding:10px;
   transform: translateX(100%);
   animation: slide-in 0.5s forwards;
   -webkit-animation: slide-in 0.5s forwards;
@@ -36,27 +42,38 @@ body
     100% { -webkit-transform: translateX(0%); }
 }
 
-
+/*
 .grid-item{
-  /* height:inherit; */
+  height:inherit;
   width: auto;
   border: none;
   background-color: transparent;
   outline: none;
 }
+*/
+
 
 .cards{
-  max-width: inherit;
-  margin-top: 145px;
+  width: auto;
+  border: none;
+  background-color: transparent;
+  transform: scale(1.05,1.05);
+  outline: none;
+   margin-top: 100px;
   max-width: 100%;
   max-height: 100%;
 }
 
-#maincard{
-  margin-top: 30px;
-  max-width: 100%;
-  max-height: 100%;
-}
+.engine {
+  background-color: transparent;
+    border: none;
+    outline: none;
+    transform: scale(1.1,1.1);
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
 
 #mediaChoices{
     position: relative;
@@ -69,14 +86,17 @@ body
 }
 
 .morsebuttons{
+      width: 100%;
+      margin: 5px;
       background-color: #f7f7f7;
 }
 
 .morse-button
 {
+    margin: 2px;
     display: inline-block;
     outline: none;
-    width: 50%;
+    width: 49.5%;
     padding: 10px;
     text-align: center;
     /* background: #CC3F4B; */
@@ -99,8 +119,8 @@ body
 
 #dahButton
 {
-  color: #404040;
-  background: #f7f7f7;
+    color: #404040;
+    background: #f7f7f7;
     font-size: 150px;
     font-weight: bold;
     display: inline-block;
